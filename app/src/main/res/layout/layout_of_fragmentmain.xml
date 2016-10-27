@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+android:horizontalSpacing="0dp"
+        android:id="@+id/gridlist"
+
+        android:columnWidth="185dp"
+
+
+
+        android:background="@android:color/background_dark"
+        >
+
+    </GridView>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+android:visibility="gone"
+        android:layout_centerVertical="true"
+
+        android:indeterminate="true"
+
+
+        />
+
+
+    </RelativeLayout>

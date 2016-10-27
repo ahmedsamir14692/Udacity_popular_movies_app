@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/details"
+    android:background="@android:color/background_dark"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrool"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="#303030"
+                android:paddingBottom="32dp"
+                android:paddingTop="32dp"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:id="@+id/name_of_movee"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/poster"
+                    android:layout_marginLeft="16dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bar"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/year"
+                        android:textColor="@android:color/white"
+                        android:paddingRight="4dp"
+                        android:singleLine="true"
+                        />
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:background="@drawable/heartshapebutton"
+
+
+                        android:id="@+id/fav"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/overview"
+                android:paddingLeft="16dp"
+                android:paddingRight="4dp"
+                android:textColor="@android:color/white"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:padding="16dp"
+                    android:id="@+id/listview"
+                    android:background="@android:color/background_dark"
+                    >
+
+                </ListView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="reviews :"
+                    android:paddingLeft="32dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="25sp"
+                    android:textColor="#41b4af"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/re"
+                    android:textSize="25sp"
+                    android:paddingLeft="16dp"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

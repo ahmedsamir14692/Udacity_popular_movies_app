@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framoffav"
+    
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageofnofav"
+        android:src="@drawable/titled"
+        android:scaleType="fitXY"
+        />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridoffav"
+        android:numColumns="auto_fit"
+        android:columnWidth="185dp"
+
+        >
+
+
+    </GridView>
+
+</FrameLayout>
